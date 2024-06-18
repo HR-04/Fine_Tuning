@@ -1,0 +1,48 @@
+- query:
+What is QuarkSek?
+
+- result:
+QuarkSek is a company that provides penetration testing, quality and test automation services for web and mobile applications to protect sensitive data and safeguard businesses from cyber threats. They offer a range of services including security engineering, QA engineering, and test automation. Their team of experts uses pioneering tools and technologies to enhance efficiency, accuracy, and the overall quality of software products.
+
+- query:
+What QuarkSek offers?
+
+- result: 
+QuarkSek offers Penetration Testing, Quality and Test Automation Services.
+
+- query:
+What is QA Engineering?
+
+- result: 
+QA Engineering refers to the process of designing and executing tests to ensure software quality, including test planning, strategy definition, and execution with industry best practices. It involves implementing a software testing lifecycle using proper tools and methodologies. This service is offered by QuarkSek to help clients improve the quality of their projects.
+
+- query: 
+What is Test Automation?
+
+- result: 
+Test Automation is a process of designing and executing automated tests for software applications to ensure quality, efficiency, and accuracy. It involves defining test automation strategy and planning, designing a test automation framework, and automating functional and non-functional testing for web and mobile platforms.
+
+- query: 
+What is Security Engineering?
+
+- result: 
+Based on the provided context, Security Engineering refers to a comprehensive suite of services offered by QuarkSek that includes vulnerability assessment and penetration testing for web, mobile apps, and APIs, cloud security assessment, HIPAA, PCI DSS, GDPR compliance audit, and threat modelling and DevSecOps.
+
+- query: 
+What Quarsek Client Says?
+
+- result: 
+According to the context, a client says: "I am pleased to share our experience working with Quarksek." The full quote is from Bo Peng, CPO at Arcana Analytics, who praises QuarkSek\'s commitment to excellence and collaborative approach in improving the quality of their projects.
+
+
+- query: 
+Quersek Team?
+
+- result:
+QuarkSek Team consists of co-founders Ramalakshmi T and Dinesh Arunachalam, as well as principal consultants Rajeswar Rao, Asha Ubendran, and others.
+
+- query: 
+Who is the CEO of Quersek?
+
+- result:
+Ramalakshmi T is the CEO of QuarkSek.
