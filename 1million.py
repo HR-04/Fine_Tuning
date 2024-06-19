@@ -19,12 +19,12 @@ def parse_problems(text):
     current_key = None
     
     for line in lines:
-        if line.startswith('- query'):
+        if line.startswith('- Scenario'):
             if current_problem:
                 problems.append(current_problem)
             current_problem = {'instruction': 'Answer the Following Question', 'input': '', 'output': ''}
             current_key = 'input'
-        elif line.startswith('- result'):
+        elif line.startswith('- Error'):
             current_key = 'output'
         elif current_key:
             current_problem[current_key] += line + '\n'
@@ -36,12 +36,12 @@ def parse_problems(text):
 
 def main():
     # Read the dataset file
-    text = read_file("data1.txt")
+    text = read_file("testcase.txt")
     problems = parse_problems(text)
     
     # Convert and write to JSON
-    write_to_json(problems, "Parsecode1.json")
-    print("Problems parsed and written to Parsecode1.json")
+    write_to_json(problems, "Junit DS.json")
+    print("Problems parsed and written to Junit DS.json")
 
 if __name__ == "__main__":
     main()
