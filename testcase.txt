@@ -1,0 +1,390 @@
+- @ccs
+
+- Scenario: As a user, I should be able to see a search bar to contain the company logo, search text box,
+allowance balance, explore templates button and user DP with menu items #
+features/V3/searchHeader.feature:7
+
+Given user logs in using username and passcode for V3
+
+Page loaded successfully: https://qa-app.joinassembly.com/workspaces
+
+Given user in new UI experience
+
+Then the user should able to see the company logo and search the text box
+
+Then the user should able to see allowance balance, explore the templates button and user DP with
+menu items
+
+- @ccs
+
+- Scenario: As a user, I should be able to see my Allowances balance and Earned balance if exists #
+features/V3/searchHeader.feature:13
+
+Given user logs in using username and passcode for V3
+
+Page loaded successfully: https://qa-app.joinassembly.com/workspaces
+
+Given user in new UI experience
+
+When user clicks on the allowances
+
+Then user should be able to see the allowances balance and click on the "Browse rewards" button
+
+Then user should be redirected to the rewards page
+
+Feature: Admin -> Billing -> Account plan # features/billing/upgradeDowngradePlan.feature:
+
+- @ccs
+
+- Scenario Outline: As a admin user I should be able upgrade to any plan #
+features/billing/upgradeDowngradePlan.feature:13
+
+Given user logs in for free account using username and passcode
+
+locator('xpath=(//p[contains(text(), \'Launch\')])[1]/ancestor::button[1]') Element found and visible
+
+Given user is in free plan
+
+New page title: Assembly - Empower your team
+
+Breadcrumb text is : > Account Plan
+
+When user upgrades to "Upgrade to Standard" plan available
+
+Toast message is : Downgrading to Starter plan
+
+Then Snapshot "Upgrade to Standard"
+
+- @ccs
+
+- Scenario Outline: As a admin user I should be able upgrade to any plan #
+features/billing/upgradeDowngradePlan.feature:13
+
+Given user logs in for free account using username and passcode
+
+locator('xpath=(//p[contains(text(), \'Launch\')])[1]/ancestor::button[1]') Element found and visible
+
+Given user is in free plan
+
+New page title: Assembly - Empower your team
+
+Breadcrumb text is : > Account Plan
+
+When user upgrades to "Upgrade to Premium" plan available
+
+Toast message is : Downgrading to Starter plan
+
+Then Snapshot "Upgrade to Premium"
+
+Feature: Admin -> Billing -> Payment method # features/billing/validateChangingCardDetails.feature:1
+
+- @ccs
+
+- Scenario Outline: As a admin user I should be able to add and update card details #
+features/billing/validateChangingCardDetails.feature:7
+
+Given user logs in using username and passcode
+
+getByTestId('workspaceCard-63cf8ce6ba15eaee56e504df') Element found and visible
+
+Given user has added old card details
+
+New page title: Assembly - Empower your team
+
+When user updates card details using "user1" "4242 4242 4242 4242" "12/2025" "123" "APP100"
+
+Toast message is : Applying Promo Code...
+
+Toast message is : Applying Promo Code...
+
+Then Snapshot "user1-4242 4242 4242 4242"
+
+Feature: Admin -> Bots -> Anniversary # features/bot/anniversaryBot.feature:1
+
+- @ccs
+
+- Scenario: As a user, I should be able to add Anniversary date # features/bot/anniversaryBot.feature:35
+
+Given user logs in using username and passcode to standard plan account
+
+locator('xpath=(//p[contains(text(), \'Launch\')])[1]/ancestor::button[1]') Element found and visible
+
+Given a user opens Admin page for anniversary
+
+New page title: Assembly - Empower your team
+
+When the user clicks on Anniversary
+
+Failed screenshot taken... screenshots/As a user, I should be able to add Anniversary date:-Element
+Name: editSelectedGif.png
+
+- ✖ failed
+
+- Error: Failed to find the [editSelectedGif] element after waiting for time: 30000 milliseconds
+
+at loginPage.waitForElementInNewPage
+(/home/manish/actions-runner/_work/assembly_automation/assembly_automation/src/pageobjects/loginP
+age.ts:465:15)
+
+at async CustomWorld.<anonymous>
+(/home/manish/actions-runner/_work/assembly_automation/assembly_automation/src/steps/bot/anniversa
+ryBot.steps.ts:35:27)
+
+And user adds hire date using Add button in Anniversary section
+
+- skipped
+
+Then user must be available in Anniversaries this month section
+
+- skipped
+
+- @ccs
+
+- Scenario: As a user, I should be able to add Anniversary date # features/bot/anniversaryBot.feature:35
+
+Given user logs in using username and passcode to standard plan account
+
+locator('xpath=(//p[contains(text(), \'Launch\')])[1]/ancestor::button[1]') Element found and visible
+
+Given a user opens Admin page for anniversary
+
+New page title: Assembly - Empower your team
+
+When the user clicks on Anniversary
+
+Failed screenshot taken... screenshots/As a user, I should be able to add Anniversary date:-Element
+Name: editSelectedGif.png
+
+- ✖ failed
+
+- Error: Failed to find the [editSelectedGif] element after waiting for time: 30002 milliseconds
+
+at loginPage.waitForElementInNewPage
+(/home/manish/actions-runner/_work/assembly_automation/assembly_automation/src/pageobjects/loginP
+age.ts:465:15)
+
+at async CustomWorld.<anonymous>
+(/home/manish/actions-runner/_work/assembly_automation/assembly_automation/src/steps/bot/anniversa
+ryBot.steps.ts:35:27)
+
+And user adds hire date using Add button in Anniversary section
+
+- skipped
+
+Then user must be available in Anniversaries this month section
+
+- skipped
+
+Feature: Admin -> Bots -> Birthday # features/bot/birthdayBot.feature:1
+
+@ccs
+
+- Scenario: As a user, I should be able to add Birthday date # features/bot/birthdayBot.feature:35
+
+Given user logs in using username and passcode to standard plan account
+
+locator('xpath=(//p[contains(text(), \'Launch\')])[1]/ancestor::button[1]') Element found and visible
+
+Given a user opens Admin page for Birthday
+
+New page title: Assembly - Empower your team
+
+When the user clicks on Birthday
+
+And user adds birthday date using Add button in Birthday section
+
+This month name is : June
+
+today date is 13
+
+Toast message is : Updating user(s)...
+
+Then user must be available in Birthday this month section
+
+Employees without birthdays (1)
+
+Birthdays this month (2)
+
+Feature: Homepage -> Flows -> Answer flow # features/flows/verifyAnsweringAllBlocks.feature:1
+
+
+@ccs
+
+- Scenario: As a user I should be able to validate all blocks #
+features/flows/verifyAnsweringAllBlocks.feature:7
+
+Given user logs in using username and passcode
+
+getByTestId('workspaceCard-63cf8ce6ba15eaee56e504df') Element found and visible
+
+Given user is a participant of a flow
+
+When user answers a flow successfully
+
+frameLocator('iframe[title="Discover"]').getByLabel('text editor') Element found and visible
+
+frameLocator('iframe[title="Discover"]').getByLabel('Choose an option.').first() Element found and visible
+
+Then user must be able to verify posted timestamp
+
+Feature: Homepage -> Flows -> VerifySimpleSharesheet #
+features/flows/verifySimpleSharesheet.feature:1
+
+@ccs
+
+- Scenario: As a user, I should be able to add a member in the sharesheet and change thier permissions
+and validate the preview list # features/flows/verifySimpleSharesheet.feature:7
+
+Given user logs in using username and passcode
+
+getByTestId('workspaceCard-63cf8ce6ba15eaee56e504df') Element found and visible
+
+Given user creates a flow using templates
+
+When user shares the flow with a "Automation user1"
+
+And user must be able to change the permissions
+
+And user changes permission to only post for shared member
+
+✖ failed
+
+- Error: Failed to find the [Automation user1] element after waiting for time: 30007 milliseconds
+
+at loginPage.waitForElementInsideIFrame
+(/home/manish/actions-runner/_work/assembly_automation/assembly_automation/src/pageobjects/loginP
+age.ts:489:15)
+
+at async CustomWorld.<anonymous>
+(/home/manish/actions-runner/_work/assembly_automation/assembly_automation/src/steps/flows/verifySi
+mpleSharesheet.steps.ts:121:3)
+
+Then shared member should not be available under can view filter in the preview list
+
+- skipped
+
+Then user must be able to archive a flow
+
+- skipped
+
+@ccs
+
+- Scenario: As a user, I should be able to add a member in the sharesheet and change thier permissions
+and validate the preview list # features/flows/verifySimpleSharesheet.feature:7
+
+Given user logs in using username and passcode
+
+getByTestId('workspaceCard-63cf8ce6ba15eaee56e504df') Element found and visible
+
+Given user creates a flow using templates
+
+✖ failed
+
+- Error: Failed to find the [shareSheetDoneButton] element after waiting for time: 30006 milliseconds
+
+at loginPage.waitForElementInsideIFrame
+(/home/manish/actions-runner/_work/assembly_automation/assembly_automation/src/pageobjects/loginP
+age.ts:489:15)
+
+at async CustomWorld.<anonymous>
+(/home/manish/actions-runner/_work/assembly_automation/assembly_automation/src/steps/flows/verifySi
+mpleSharesheet.steps.ts:34:3)
+
+When user shares the flow with a "Automation user1"
+
+- skipped
+
+And user must be able to change the permissions
+
+- skipped
+
+And user changes permission to only post for shared member
+
+- skipped
+
+Then shared member should not be available under can view filter in the preview list
+
+- skipped
+
+Then user must be able to archive a flow
+
+- skipped
+
+Feature: Admin -> General -> Update company name #
+features/general/validateCurrencyCompanyField.feature:1
+
+@ccs
+
+- Scenario Outline: As a admin user I should be able to update company name, Logo and trophy value #
+features/general/validateCurrencyCompanyField.feature:7
+
+Given user logs in using username and passcode
+
+getByTestId('workspaceCard-63cf8ce6ba15eaee56e504df') Element found and visible
+
+Given a user opens Admin page
+
+New page title: Assembly - Empower your team
+
+When the user clicks on General section
+
+Breadcrumb text is : > General
+
+And user updates company name and trophy
+
+Then details such as company name "Empty" and trophy "" must be updated
+
+Company name is : Empty
+
+Singular trophy name is :
+
+✖ failed
+
+- Error
+elementHandle.click: Timeout 30000ms exceeded.
+
+Call log:
+
+- attempting click action
+
+- waiting for element to be visible, enabled and stable
+
+- element is not enabled
+
+- retrying click action, attempt #1
+
+- waiting for element to be visible, enabled and stable
+
+- element is not enabled
+
+- retrying click action, attempt #2
+
+- waiting 20ms
+
+- waiting for element to be visible, enabled and stable
+
+- ele m e n t is n o t e n a ble d 
+- r e t r yin g clic k a c tio n, a t t e m p t 
+- w aitin g 1 0 0 m s 
+- w aitin g fo r ele m e n t t o b e visible, e n a ble d a n d s t a ble 
+- ele m e n t is n o t e n a ble d 
+- r e t r yin g clic k a c tio n, a t t e m p t #
+- w aitin g 1 0 0 m s 
+- w aitin g fo r ele m e n t t o b e visible, e n a ble d a n d s t a ble 
+- ele m e n t is n o t e n a ble d 
+- r e t r yin g clic k a c tio n, a t t e m p t # 5 2 1 1 - w aitin g 5 0 0 m s 
+- w aitin g fo r ele m e n t t o b e visible, e n a ble d a n d s t a ble 
+- ele m e n t is n o t e n a ble d 
+- r e t r yin g clic k a c tio n, a t t e m p t # 6 2 1 5 - w aitin g 5 0 0 m s 
+- w aitin g fo r ele m e n t t o b e visible, e n a ble d a n d s t a ble 
+- ele m e n t is n o t e n a ble d 
+- r e t r yin g clic k a c tio n, a t t e m p t # 7 2 1 9 - w aitin g 5 0 0 m s 
+- w aitin g fo r ele m e n t t o b e visible, e n a ble d a n d s t a ble 
+- ele m e n t is n o t e n a ble d 
+- r e t r yin g clic k a c tio n, a t t e m p t # 8 2 2 3 - w aitin g 5 0 0 m s 
+- w aitin g fo r ele m e n t t o b e visible, e n a ble d a n d s t a ble 
+- ele m e n t is n o t e n a ble d
+
+
+
+

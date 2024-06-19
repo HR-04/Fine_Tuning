@@ -1,0 +1,37 @@
+[
+    {
+        "instruction": "Answer the Following Question",
+        "input": "allowance balance, explore templates button and user DP with menu items #\nfeatures/V3/searchHeader.feature:7\n\nGiven user logs in using username and passcode for V3\n\nPage loaded successfully: https://qa-app.joinassembly.com/workspaces\n\nGiven user in new UI experience\n\nThen the user should able to see the company logo and search the text box\n\nThen the user should able to see allowance balance, explore the templates button and user DP with\nmenu items\n\n- @ccs\n\n",
+        "output": ""
+    },
+    {
+        "instruction": "Answer the Following Question",
+        "input": "features/V3/searchHeader.feature:13\n\nGiven user logs in using username and passcode for V3\n\nPage loaded successfully: https://qa-app.joinassembly.com/workspaces\n\nGiven user in new UI experience\n\nWhen user clicks on the allowances\n\nThen user should be able to see the allowances balance and click on the \"Browse rewards\" button\n\nThen user should be redirected to the rewards page\n\nFeature: Admin -> Billing -> Account plan # features/billing/upgradeDowngradePlan.feature:\n\n- @ccs\n\n",
+        "output": ""
+    },
+    {
+        "instruction": "Answer the Following Question",
+        "input": "features/billing/upgradeDowngradePlan.feature:13\n\nGiven user logs in for free account using username and passcode\n\nlocator('xpath=(//p[contains(text(), \\'Launch\\')])[1]/ancestor::button[1]') Element found and visible\n\nGiven user is in free plan\n\nNew page title: Assembly - Empower your team\n\nBreadcrumb text is : > Account Plan\n\nWhen user upgrades to \"Upgrade to Standard\" plan available\n\nToast message is : Downgrading to Starter plan\n\nThen Snapshot \"Upgrade to Standard\"\n\n- @ccs\n\n",
+        "output": ""
+    },
+    {
+        "instruction": "Answer the Following Question",
+        "input": "features/billing/upgradeDowngradePlan.feature:13\n\nGiven user logs in for free account using username and passcode\n\nlocator('xpath=(//p[contains(text(), \\'Launch\\')])[1]/ancestor::button[1]') Element found and visible\n\nGiven user is in free plan\n\nNew page title: Assembly - Empower your team\n\nBreadcrumb text is : > Account Plan\n\nWhen user upgrades to \"Upgrade to Premium\" plan available\n\nToast message is : Downgrading to Starter plan\n\nThen Snapshot \"Upgrade to Premium\"\n\nFeature: Admin -> Billing -> Payment method # features/billing/validateChangingCardDetails.feature:1\n\n- @ccs\n\n",
+        "output": ""
+    },
+    {
+        "instruction": "Answer the Following Question",
+        "input": "features/billing/validateChangingCardDetails.feature:7\n\nGiven user logs in using username and passcode\n\ngetByTestId('workspaceCard-63cf8ce6ba15eaee56e504df') Element found and visible\n\nGiven user has added old card details\n\nNew page title: Assembly - Empower your team\n\nWhen user updates card details using \"user1\" \"4242 4242 4242 4242\" \"12/2025\" \"123\" \"APP100\"\n\nToast message is : Applying Promo Code...\n\nToast message is : Applying Promo Code...\n\nThen Snapshot \"user1-4242 4242 4242 4242\"\n\nFeature: Admin -> Bots -> Anniversary # features/bot/anniversaryBot.feature:1\n\n- @ccs\n\n",
+        "output": ""
+    },
+    {
+        "instruction": "Answer the Following Question",
+        "input": "\nGiven user logs in using username and passcode to standard plan account\n\nlocator('xpath=(//p[contains(text(), \\'Launch\\')])[1]/ancestor::button[1]') Element found and visible\n\nGiven a user opens Admin page for anniversary\n\nNew page title: Assembly - Empower your team\n\nWhen the user clicks on Anniversary\n\nFailed screenshot taken... screenshots/As a user, I should be able to add Anniversary date:-Element\nName: editSelectedGif.png\n\n- \u2716 failed\n\n",
+        "output": "\nat loginPage.waitForElementInNewPage\n(/home/manish/actions-runner/_work/assembly_automation/assembly_automation/src/pageobjects/loginP\nage.ts:465:15)\n\nat async CustomWorld.<anonymous>\n(/home/manish/actions-runner/_work/assembly_automation/assembly_automation/src/steps/bot/anniversa\nryBot.steps.ts:35:27)\n\nAnd user adds hire date using Add button in Anniversary section\n\n- skipped\n\nThen user must be available in Anniversaries this month section\n\n- skipped\n\n- @ccs\n\n"
+    },
+    {
+        "instruction": "Answer the Following Question",
+        "input": "\nGiven user logs in using username and passcode to standard plan account\n\nlocator('xpath=(//p[contains(text(), \\'Launch\\')])[1]/ancestor::button[1]') Element found and visible\n\nGiven a user opens Admin page for anniversary\n\nNew page title: Assembly - Empower your team\n\nWhen the user clicks on Anniversary\n\nFailed screenshot taken... screenshots/As a user, I should be able to add Anniversary date:-Element\nName: editSelectedGif.png\n\n- \u2716 failed\n\n",
+        "output": "\nat loginPage.waitForElementInNewPage\n(/home/manish/actions-runner/_work/assembly_automation/assembly_automation/src/pageobjects/loginP\nage.ts:465:15)\n\nat async CustomWorld.<anonymous>\n(/home/manish/actions-runner/_work/assembly_automation/assembly_automation/src/steps/bot/anniversa\nryBot.steps.ts:35:27)\n\nAnd user adds hire date using Add button in Anniversary section\n\n- skipped\n\nThen user must be available in Anniversaries this month section\n\n- skipped\n\n\n"
+    }
+]
