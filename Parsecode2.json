@@ -1,37 +1,62 @@
 [
     {
-        "instruction": "Define QuarkSek",
+        "instruction": "",
         "input": "What is QuarkSek?",
         "output": "QuarkSek is a company that provides penetration testing, quality and test automation services for web and mobile applications to protect sensitive data and safeguard businesses from cyber threats. They offer a range of services including security engineering, QA engineering, and test automation. Their team of experts uses pioneering tools and technologies to enhance efficiency, accuracy, and the overall quality of software products."
     },
     {
-        "instruction": "List services offered by QuarkSek",
+        "instruction": "",
         "input": "What does QuarkSek offer?",
         "output": "QuarkSek offers Penetration Testing, Quality and Test Automation Services."
     },
     {
-        "instruction": "Define QA Engineering in the context of QuarkSek",
+        "instruction": "",
         "input": "What is QA Engineering?",
         "output": "QA Engineering refers to the process of designing and executing tests to ensure software quality, including test planning, strategy definition, and execution with industry best practices. It involves implementing a software testing lifecycle using proper tools and methodologies. This service is offered by QuarkSek to help clients improve the quality of their projects."
     },
     {
-        "instruction": "Define Test Automation in the context of QuarkSek",
+        "instruction": "",
         "input": "What is Test Automation?",
         "output": "Test Automation is a process of designing and executing automated tests for software applications to ensure quality, efficiency, and accuracy. It involves defining test automation strategy and planning, designing a test automation framework, and automating functional and non-functional testing for web and mobile platforms."
     },
     {
-        "instruction": "Define Security Engineering in the context of QuarkSek",
+        "instruction": "",
         "input": "What is Security Engineering?",
         "output": "Based on the provided context, Security Engineering refers to a comprehensive suite of services offered by QuarkSek that includes vulnerability assessment and penetration testing for web, mobile apps, and APIs, cloud security assessment, HIPAA, PCI DSS, GDPR compliance audit, and threat modeling and DevSecOps."
     },
     {
-        "instruction": "Share a client's testimonial about QuarkSek",
+        "instruction": "",
         "input": "What does a QuarkSek client say?",
         "output": "According to the context, a client says: \"I am pleased to share our experience working with Quarksek.\" The full quote is from Bo Peng, CPO at Arcana Analytics, who praises QuarkSek's commitment to excellence and collaborative approach in improving the quality of their projects."
     },
     {
-        "instruction": "List members of the QuarkSek team and their roles,If asked the names also should answer the question.Don't hallucinate with their role.",
+        "instruction": "",
         "input": "Who are the members of the QuarkSek team?",
-        "output": "The QuarkSek team consists of CEO OF Quarsek is the Ramalakshmi T and Dinesh Arunachalam who is the co-founder of CEO, as well as principal consultants Rajeswar Rao, Asha Ubendran."
+        "output": "The QuarkSek team consists of co-founders Ramalakshmi T and Dinesh Arunachalam, as well as principal consultants Rajeswar Rao, Asha Ubendran, and others."
+    },
+    {
+        "instruction": "",
+        "input": "Who is the CEO of QuarkSek?",
+        "output": "Ramalakshmi T is the CEO of QuarkSek."
+    },
+    {
+        "instruction": "",
+        "input": "Who is Ramalakshmi T?",
+        "output": "Ramalakshmi T is the CEO of QuarkSek."
+    },
+    {
+        "instruction": "",
+        "input": "Who is Dinesh Arunachalam?",
+        "output": "Dinesh Arunachalam is a co-founder of QuarkSek."
+    },
+    {
+        "instruction": "",
+        "input": "Who is Rajeswar Rao?",
+        "output": "Rajeswar Rao is a principal consultant at QuarkSek."
+    },
+    {
+        "instruction": "",
+        "input": "Who is Asha Ubendran?",
+        "output": "Asha Ubendran is a principal consultant at QuarkSek."
     }
 ]
